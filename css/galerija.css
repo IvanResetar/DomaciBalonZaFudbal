@@ -1,0 +1,220 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.title{
+  margin-top:4%;
+  color: #666666;
+  text-align: center;
+  font-family: 'Playfair Display' , serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Koriscenje Window i Timer funkcionalnosti */
+h2{
+  cursor: pointer;
+}
+h2:hover{
+  color:#a5d74d;
+  transition: all 0.3s;
+}
+
+.timerWindow{
+  color: #666666;
+  text-align: center;
+  font-family: 'Playfair Display' , serif;
+}
+
+/* Navbar */
+nav {
+	height: 10vh;
+	background-color: #ededed;
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	transform: translate(-0.5%, 0%);
+  background-color:  #d9d9d9;
+}
+.nav-links li a {
+	color: #666666;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;	
+	padding: 0em 1.2em;	
+}	
+.nav-links li a:hover {
+	color: #000000;
+	transition: all 0.2s;
+  font-size:20px;
+} 
+#logo {
+  height: 65px;
+  border-radius:20px;
+}
+
+/* Slider */
+.thing{
+  width:80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div.gallery:hover {
+  opacity: 0.5;
+  transition: all .5s;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* razmak izmedju slika */
+.slick-slide{
+  margin: 0px 20px;
+}
+/* strelice */
+.slick-prev:before, .slick-next:before { 
+  color: #a5d74d !important;
+}
+
+/* footer */
+.footer{
+  background-color:  #d9d9d9;
+  color: #ededed;
+  margin-top: 5vh;
+}
+.space{
+	height: 4vh;
+}
+.row-footer{
+	display: flex;
+	flex: row;
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom: 3%;
+	align-items: center;
+}
+.footer-about, .footer-nav, .footer-contact{
+  flex: 100%;
+	padding-left: 2em;
+}
+.footer-about{
+	color: #666666;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+}
+.footer-nav-links{
+	list-style: none;
+}
+.footer-nav li a{
+  display: block;
+	color: #666666;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	margin-bottom: 0.75em;	
+}
+.footer-nav li a:hover{
+	color: #000000;
+	transition: all .3s;
+  font-size:15px;
+}
+.footer h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	color: #666666;
+	margin-bottom: 0.5em;
+}
+.footer p {
+  color:#666666;
+}
+.footer-contact ul{
+	list-style: none;
+}
+.footer-contact ul li{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	padding: 0.75em 0em;
+  color:#666666;
+}
+#date{
+	color: #666666;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* responzivnost */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  #logo {
+    display: none;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #543b23;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+    width: auto;
+  }	
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 30%;
+    z-index: 3;
+  }
+  .nav-links {
+    z-index: 2;
+    position: fixed;
+    background-color: #ededed;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition:  all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1050px at 90% -20%);
+    -webkit-clip-path: circle(1050px at 90% -20%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    padding: 20px 0px;
+  }
+
+  /* footer */
+  .footer{
+    margin-top: 5vh;
+  }
+	.row-footer{
+		display: flex;
+		flex-direction: column;
+    align-items: flex-start;
+	}
+	.footer-about, .footer-nav, .footer-contact{
+		margin-top: 2em;
+	}
+}
+
+@media screen and (min-height: 1366px){
+  #big-wrap{
+    height: 100vh;
+  }
+}
