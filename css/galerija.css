@@ -209,7 +209,7 @@ div.gallery img {
     align-items: flex-start;
 	}
 	.footer-about, .footer-nav, .footer-contact{
-		margin-top: 2em;
+    margin-top: 2em;
 	}
 }
 
