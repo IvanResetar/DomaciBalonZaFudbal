@@ -102,6 +102,7 @@ body{
 	border-radius:20px;
 }
 
+/*Responzivnost*/
 @media screen and (max-width: 768px) {
 	#logo {
 		display: none;
